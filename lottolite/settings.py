@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'app_account',
+    'app_bot',
 ]
 
 MIDDLEWARE = [
@@ -68,6 +70,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'lottolite.wsgi.application'
+
+AUTH_USER_MODEL = 'app_account.User'
 
 
 # Database
